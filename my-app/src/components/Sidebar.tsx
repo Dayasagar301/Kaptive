@@ -71,7 +71,7 @@ interface SidebarProps extends BoxProps {
 
 const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
   return (
-    <Box
+    <Box//
     style={{backgroundColor:"rgb(107,108,251)",color:"white"}}
       borderRight="1px"
       borderRightColor={useColorModeValue('gray.200', 'gray.700')}
