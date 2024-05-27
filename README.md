@@ -36,3 +36,30 @@ Kaptive
 │   │   ├── index.css
 │   │   └── main.jsx
 │   └── vite.config.js
+
+
+## Video Walkthrough of the project
+A detailed walkthrough of all the features of our project can be found here:
+
+https://drive.google.com/file/d/1zHFqsrW4lM1dAWsd88hxbe99ywXnM5TR/view?usp=drive_link
+
+
+```bash
+Kaptive
+cd my-app
+
+npm run server
+```
+###
+![Screenshot (150)](https://github.com/Dayasagar301/Kaptive/assets/132691000/26f158cd-a708-4200-a258-c236a5253e32)
+<hr/>
+![Screenshot (151)](https://github.com/Dayasagar301/Kaptive/assets/132691000/30a49d3b-2432-47cf-9abe-5812e72c20af)
+
+
+## Technology Stack
+List and provide a brief overview of the technologies used in the project.
+
+- HTML5
+- CSS
+- Reactjs
+- Chakra UI
