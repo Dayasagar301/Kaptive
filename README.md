@@ -53,7 +53,8 @@ npm run server
 ###
 ![Screenshot (150)](https://github.com/Dayasagar301/Kaptive/assets/132691000/26f158cd-a708-4200-a258-c236a5253e32)
 <hr/>
-![Screenshot (151)](https://github.com/Dayasagar301/Kaptive/assets/132691000/30a49d3b-2432-47cf-9abe-5812e72c20af)
+
+![Screenshot (151)](https://github.com/Dayasagar301/Kaptive/assets/132691000/447a76ec-ca73-4f31-bbf8-e0b753e0f100)
 
 
 ## Technology Stack
