@@ -71,14 +71,14 @@ interface SidebarProps extends BoxProps {
 
 const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
   return (
-    <Box//
+    <Box
     style={{backgroundColor:"rgb(107,108,251)",color:"white"}}
       borderRight="1px"
       borderRightColor={useColorModeValue('gray.200', 'gray.700')}
       w={{ base: 'full', lg: 60 }}
       pos="fixed"
-      h="full"//
-      {...rest}>//ad
+      h="full"
+      {...rest}>
       <Flex h="20" alignItems="center" mx="8" justifyContent="space-between">
         <Text fontSize="2xl" fontFamily="monospace" fontWeight="bold">
           PLSE
