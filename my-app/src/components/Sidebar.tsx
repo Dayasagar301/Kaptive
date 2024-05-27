@@ -78,7 +78,7 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
       w={{ base: 'full', lg: 60 }}
       pos="fixed"
       h="full"
-      {...rest}>
+      {...rest}>//ad
       <Flex h="20" alignItems="center" mx="8" justifyContent="space-between">
         <Text fontSize="2xl" fontFamily="monospace" fontWeight="bold">
           PLSE
