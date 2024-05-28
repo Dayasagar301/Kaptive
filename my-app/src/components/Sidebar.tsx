@@ -109,18 +109,18 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
       <Box mt="auto" pt="">
         {/* Pushes the logout button to the bottom */}
         <Button
-          bg="rgb(203,204,254)"
-          size="lg"
-          w="100%"
-          paddingBottom="5%"
-          paddingTop="5%"
-          _hover={{ bg: 'rgb(150,150,254)' }}
-        >
-          <Flex align="center" justify="center">
-            <Icon as={FiLogOut} mr="4" />
-            <Text>Logout</Text>
-          </Flex>
-        </Button>
+  bg="rgb(203,204,254)"
+  size={{ base: 'sm', md: 'md', lg: 'lg' }}
+  w={{ base: '95%', md: '90%', lg: '85%' }} // Adjust width based on screen size
+  py={{ base: '4%', md: '5%' }}
+  _hover={{ bg: 'rgb(150,150,254)' }}
+>
+  <Flex align="center" justify="center">
+    <Icon as={FiLogOut} mr="4" />
+    <Text>Logout</Text>
+  </Flex>
+</Button>
+
       </Box>
     </Box>
   );
@@ -197,10 +197,20 @@ interface AvatarProps {
 const Avatar = ({ initials, name }: AvatarProps) => {
   return (
     <Flex align="center" justify="center" gap={2}>
-      <Box bg="gray.200" borderRadius="full" w="12" h="12" display="flex" alignItems="center" justifyContent="center">
-        <Text fontSize="lg" fontWeight="bold">{initials}</Text>
+      <Box
+        bg="gray.200"
+        borderRadius="full"
+        w={{ base: '8', md: '10', lg: '12' }}
+        h={{ base: '8', md: '10', lg: '12' }}
+        display="flex"
+        alignItems="center"
+        justifyContent="center"
+      >
+        <Text fontSize={{ base: 'sm', md: 'md', lg: 'lg' }} fontWeight="bold">
+          {initials}
+        </Text>
       </Box>
-      <Button fontSize="lg" bg="rgb(203,204,254)" _hover={{ bg: 'rgb(150,150,254)' }}>
+      <Button fontSize={{ base: 'sm', md: 'md', lg: 'lg' }} bg="rgb(203,204,254)" _hover={{ bg: 'rgb(150,150,254)' }}>
         {name}
       </Button>
     </Flex>
