@@ -48,7 +48,7 @@ https://drive.google.com/file/d/1zHFqsrW4lM1dAWsd88hxbe99ywXnM5TR/view?usp=drive
 Kaptive
 cd my-app
 
-npm run server
+npm run dev
 ```
 ###
 ![Screenshot (150)](https://github.com/Dayasagar301/Kaptive/assets/132691000/26f158cd-a708-4200-a258-c236a5253e32)
