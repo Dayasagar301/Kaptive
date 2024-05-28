@@ -6,7 +6,7 @@ Frontend
 
 ## Deplolyed App
 Frontend: https://kaptive-phi.vercel.app/
-
+~~~
 Kaptive
 ├── README.md
 └── my-app/
@@ -36,7 +36,7 @@ Kaptive
 │   │   ├── index.css
 │   │   └── main.jsx
 │   └── vite.config.js
-
+~~~
 
 ## Video Walkthrough of the project
 A detailed walkthrough of all the features of our project can be found here:
