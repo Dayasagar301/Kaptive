@@ -51,10 +51,13 @@ cd my-app
 npm run dev
 ```
 ###
-![Screenshot (150)](https://github.com/Dayasagar301/Kaptive/assets/132691000/26f158cd-a708-4200-a258-c236a5253e32)
+![Screenshot (152)](https://github.com/Dayasagar301/Kaptive/assets/132691000/0931c327-09e1-4f89-a5d3-9f8846bf65c4)
+
 <hr/>
 
-![Screenshot (151)](https://github.com/Dayasagar301/Kaptive/assets/132691000/447a76ec-ca73-4f31-bbf8-e0b753e0f100)
+![Screenshot (153)](https://github.com/Dayasagar301/Kaptive/assets/132691000/6f21999c-b09e-4cd5-8eed-910ef913702a)
+
+
 
 
 ## Technology Stack
