@@ -13,6 +13,7 @@ import {
   useDisclosure,
   BoxProps,
   FlexProps,
+  Button,
 } from '@chakra-ui/react';
 import {
   FiHome,
@@ -72,7 +73,7 @@ interface SidebarProps extends BoxProps {
 const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
   return (
     <Box
-    style={{backgroundColor:"rgb(107,108,251)",color:"white"}}
+      style={{ backgroundColor: "rgb(107,108,251)", color: "white" }}
       borderRight="1px"
       borderRightColor={useColorModeValue('gray.200', 'gray.700')}
       w={{ base: 'full', lg: 60 }}
@@ -87,9 +88,9 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
       </Flex>
       <Box>
         {LinkItems.map((link) => (
-          <React.Fragment key={link.name}>
-            <NavItem icon={link.icon}>{link.name}</NavItem>
-          </React.Fragment>
+          <NavItem key={link.name} icon={link.icon} bg={link.name === 'Chart' ? 'rgb(203,204,254)' : undefined}>
+            {link.name}
+          </NavItem>
         ))}
       </Box>
       <br />
@@ -98,16 +99,28 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
       <br />
       <br />
       <br />
-      <br/>
-      <br/>
-      <br/>
+      <br />
+      <br />
+
       <Box my="4" textAlign="center">
         <Avatar initials="DD" name="Dayasagar Dalai" />
       </Box>
-      <Box mt="auto" pt=""> {/* Pushes the logout button to the bottom */}
-        <NavItem icon={FiLogOut}>
-          Logout
-        </NavItem>
+
+      <Box mt="auto" pt="">
+        {/* Pushes the logout button to the bottom */}
+        <Button
+          bg="rgb(203,204,254)"
+          size="lg"
+          w="100%"
+          paddingBottom="5%"
+          paddingTop="5%"
+          _hover={{ bg: 'rgb(150,150,254)' }}
+        >
+          <Flex align="center" justify="center">
+            <Icon as={FiLogOut} mr="4" />
+            <Text>Logout</Text>
+          </Flex>
+        </Button>
       </Box>
     </Box>
   );
@@ -116,9 +129,10 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
 interface NavItemProps extends FlexProps {
   icon: IconType;
   children: ReactText;
+  hoverBg?: string;
 }
 
-const NavItem = ({ icon, children, ...rest }: NavItemProps) => {
+const NavItem = ({ icon, children, hoverBg, ...rest }: NavItemProps) => {
   return (
     <Link href="#" style={{ textDecoration: 'none' }} _focus={{ boxShadow: 'none' }}>
       <Flex
@@ -129,7 +143,7 @@ const NavItem = ({ icon, children, ...rest }: NavItemProps) => {
         role="group"
         cursor="pointer"
         _hover={{
-          bg: 'cyan.400',
+          bg: hoverBg || 'rgb(203,204,254)',
           color: 'white',
         }}
         {...rest}>
@@ -180,15 +194,15 @@ interface AvatarProps {
   name: string;
 }
 
-
 const Avatar = ({ initials, name }: AvatarProps) => {
   return (
     <Flex align="center" justify="center" gap={2}>
       <Box bg="gray.200" borderRadius="full" w="12" h="12" display="flex" alignItems="center" justifyContent="center">
         <Text fontSize="lg" fontWeight="bold">{initials}</Text>
       </Box>
-      <Text fontSize="md">{name}</Text>
+      <Button fontSize="lg" bg="rgb(203,204,254)" _hover={{ bg: 'rgb(150,150,254)' }}>
+        {name}
+      </Button>
     </Flex>
   );
 };
-
