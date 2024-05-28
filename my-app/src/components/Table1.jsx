@@ -62,7 +62,7 @@ const Table1 = () => {
             bg="white"
             boxShadow="0px 0px 10px rgba(0, 0, 0, 0.1)"
             size="md"
-            rightIcon={<BsTriangleFill />}
+            rightIcon={<BsTriangleFill style={{ transform: 'rotate(180deg)'}}/>}
           >
             Euro
           </Button>
