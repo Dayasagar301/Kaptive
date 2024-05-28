@@ -113,7 +113,7 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
   size={{ base: 'sm', md: 'md', lg: 'lg' }}
   w={{ base: '70%', md: '90%', lg: '85%' }} 
   py={{ base: '2%', md: '5%' }} 
-  _hover={{ bg: 'rgb(150,150,254)' }}
+  
 >
   <Flex align="center" justify="center">
     <Icon as={FiLogOut} mr={{ base: 2, md: 3, lg: 4 }} />
@@ -143,7 +143,7 @@ const NavItem = ({ icon, children, hoverBg, ...rest }: NavItemProps) => {
         role="group"
         cursor="pointer"
         _hover={{
-          bg: hoverBg || 'rgb(203,204,254)',
+         
           color: 'white',
         }}
         {...rest}>
